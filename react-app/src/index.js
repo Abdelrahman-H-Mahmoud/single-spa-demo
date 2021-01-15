@@ -2,6 +2,13 @@ import {registerApplication, start} from 'single-spa';
 registerApplication(
   'root',
   () => import('./root.app.js'),
-  () => true
+  (location) => true
 );
+
+registerApplication(
+  '@angularApp',
+  window["@angularApp"],
+  (location) => true
+);
+
 start();
