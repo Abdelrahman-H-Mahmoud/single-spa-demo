@@ -3,13 +3,13 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --project angular-app",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build:single-spa:angular-app": "ng build angular-app --prod --deploy-url http://localhost:4200/",
-    "serve:single-spa:angular-app": "ng s --project angular-app --disable-host-check --port 4200 --deploy-url http://localhost:4200/ --live-reload false"
+    "build:single-spa:angular-app": "ng build --project angular-app-single --deploy-url http://localhost:5000/ --prod",
+    "serve:single-spa:angular-app": "ng s --project angular-app-single --disable-host-check --port 4200 --deploy-url http://localhost:4200/ --live-reload false"
   },
   "private": true,
   "dependencies": {
