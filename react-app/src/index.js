@@ -8,7 +8,7 @@ registerApplication(
 registerApplication(
   '@angularApp',
   window["@angularApp"],
-  (location) => true
+  (location) => location.pathname.startsWith("/")
 );
 
 start();

@@ -34,6 +34,7 @@ yarn-error.log*
 
 # dependencies
 /angular-app/node_modules
+/angular-app/dist
 
 # profiling files
 chrome-profiler-events*.json
@@ -71,3 +72,5 @@ testem.log
 Thumbs.db
 
 .eslintcache
+
+/express/node_modules
